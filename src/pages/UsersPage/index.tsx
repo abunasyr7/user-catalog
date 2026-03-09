@@ -1,10 +1,10 @@
-import { useUsers } from './hooks/useUsers';
-import { UserCard } from './components/UserCard';
-import { SearchBar } from './components/SearchBar';
-import { Pagination } from './components/Pagination';
-import styles from './App.module.css';
+import { useUsers } from '../../hooks/useUsers';
+import { UserCard } from '../../components/UserCard';
+import { SearchBar } from '../../components/SearchBar';
+import { Pagination } from '../../components/Pagination';
+import styles from './UsersPage.module.css';
 
-function App() {
+function UsersPage() {
   const { users, total, loading, error, page, query, setPage, setQuery, totalPages } = useUsers();
 
   return (
@@ -64,4 +64,4 @@ function App() {
   );
 }
 
-export default App;
+export default UsersPage;
